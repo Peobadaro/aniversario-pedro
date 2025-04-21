@@ -1,27 +1,43 @@
 .hero {
+  position: relative;
   height: 100vh;
+  background: url('../images/banner.png') no-repeat center center / cover;
   display: flex;
   align-items: center;
   justify-content: center;
   text-align: center;
-  padding: 2rem;
+  color: $text-color;
+
+  &__overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background: $overlay-gradient;
+    z-index: 1;
+  }
 
   &__content {
-    max-width: 800px;
+    position: relative;
+    z-index: 2;
+    max-width: 900px;
+    padding: 2rem;
 
     h1 {
-      font-size: 2.5rem;
+      font-size: 3rem;
       margin-bottom: 1rem;
     }
 
     p {
-      font-size: 1.2rem;
+      font-size: 1.25rem;
     }
 
-    &__countdown {
-      margin-top: 1.5rem;
-      font-size: 1.5rem;
+    .hero__countdown {
+      display: block;
+      margin-top: 2rem;
+      font-size: 1.75rem;
       font-weight: bold;
     }
   }
-} 
+}

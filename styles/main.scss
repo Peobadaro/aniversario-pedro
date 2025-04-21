@@ -1,0 +1,16 @@
+@import "componentes/variables";
+@import "componentes/hero";
+@import "componentes/evento";
+@import "componentes/barra";
+
+body {
+  margin: 0;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background: linear-gradient(135deg, $sunset-orange, $sunset-purple);
+  color: $text-color;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+} 

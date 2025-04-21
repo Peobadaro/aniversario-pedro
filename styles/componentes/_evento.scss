@@ -1,0 +1,34 @@
+.evento {
+  padding: 4rem 2rem;
+
+  &__content {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 2rem;
+
+    img {
+      width: 300px;
+      max-width: 100%;
+    }
+
+    &--ltr {
+      flex-direction: row;
+    }
+
+    &--rtl {
+      flex-direction: row-reverse;
+    }
+
+    h2 {
+      font-size: 2rem;
+      margin-bottom: 1rem;
+    }
+
+    p {
+      font-size: 1rem;
+      max-width: 500px;
+    }
+  }
+} 
